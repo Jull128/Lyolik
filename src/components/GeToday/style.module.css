@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 564px;
+  width: 100%;
+  background-color: black;
+  padding: 0 10% 175px 10%;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+}
+
+.button__box {
+  display: flex;
+  margin-right: 195px;
+}
+
+.button_big {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 186px;
+  height: 39px;
+  background: #D9283A;
+  color: white;
+  border-style: none;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.button_small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  background: #D9283A;
+  color: white;
+  border-style: none;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.title__box {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.title {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 95%;
+  color: #FFFFFF;
+}
+
+.swiper {
+  width: 100%;
+  color: aliceblue;
+}
