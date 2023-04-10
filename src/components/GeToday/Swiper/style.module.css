@@ -5,7 +5,7 @@
 .container {
   display: flex;
   overflow-x: scroll;
-  width: 100%;
+  width: 958px;
 }
 
 .card {
