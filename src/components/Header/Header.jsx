@@ -1,8 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import style from './style.module.css'
 import logo from '../../logo.svg'
+import { api } from '../../api'
+import { useQuery } from '@tanstack/react-query'
 
 export function Header() {
+
+
     return (
         <div className={style.header}>
             <div className={style.header__navigate__box}>

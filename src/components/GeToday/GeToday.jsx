@@ -1,5 +1,6 @@
 import { Swiper } from './Swiper/Swiper'
 import style from './style.module.css'
+import vector from './Swiper/Vector.svg'
 
 export function GeToday() {
     return (
@@ -7,7 +8,7 @@ export function GeToday() {
             <div className={style.box}>
                 <div className={style.button__box}>
                     <button className={style.button_big}>Visit the newsroom</button>
-                    <button className={style.button_small}></button>
+                    <button className={style.button_small}><img src={vector} alt="" className={style.vector} /> </button>
                 </div>
 
                 <div className={style.title__box}>
