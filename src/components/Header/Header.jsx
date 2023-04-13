@@ -3,11 +3,21 @@ import style from './style.module.css'
 import logo from '../../logo.svg'
 import poligon from './Polygon.svg'
 import poligonGreen from './PolygonGreen.svg'
+import { useQuery } from '@tanstack/react-query'
+import { api } from '../../api'
 
 
-export function Header({ price }) {
+export function Header() {
 
-    //regularMarketChange - изменение цены
+    const {
+        data,
+    } = useQuery({
+        queryKey: ['ticker'],
+        queryFn: () => api.getTicker(),
+    })
+
+    let price = data?.regularMarketPrice.toFixed(2);
+    let marketPrice = data?.regularMarketChange;
 
     return (
         <div className={style.header}>
@@ -46,9 +56,21 @@ export function Header({ price }) {
                     <ul className={style.navigate}>
                         <li >
                             <NavLink className={style.ticker} to=''>
-                                <p className={style.text}>{`GE `}</p>
-                                <img src={poligon} />
-                                <p className={style.text}>{` ${price}`}</p>
+                                <p className={style.text__ticker}>{`GE `}</p>
+                                {marketPrice > 0 ?
+                                    <>
+                                        <img className={style.poligon} src={poligonGreen} />
+                                        <p className={style.text__ticker}>{`${price}`}</p>
+                                    </>
+                                    :
+                                    marketPrice < 0 ?
+                                        <>
+                                            <img className={style.poligon} src={poligon} />
+                                            <p className={style.text__ticker}>{`${price}`}</p>
+                                        </>
+                                        :
+                                        <p className={style.text__ticker}>{` `}</p>
+                                }
                             </NavLink>
                         </li>
                     </ul>

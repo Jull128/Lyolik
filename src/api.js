@@ -12,15 +12,22 @@ class Ticker {
                 'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com',
                 'useQueryString': true,
                 'Content-Type': 'application/json',
-                'Accept':'application/json'
+                'Accept': 'application/json'
             }
         })
-        .then(function(res){
-            return res.json()})
-        .then(function(stocks){
-            return stocks.quoteResponse.result[0]})
-        
-            return res
+            .then(function (res) {
+                console.log(res);
+                return res.json()
+            }).then(function (data) {
+                console.log(data);
+                return data
+            })
+            .then(function (stocks) {
+                console.log(stocks);
+                return stocks.quoteResponse.result[0]
+            })
+
+        return res
     }
 
 }

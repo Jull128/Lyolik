@@ -8,18 +8,10 @@ import { useQuery } from '@tanstack/react-query';
 
 
 function App() {
-  const {
-    data,
-} = useQuery({
-    queryKey: ['ticker'],
-    queryFn: () => api.getTicker(),
-})
-
-const price = data?.regularMarketPrice.toFixed(2)
 
   return (
     <Layout className={style.layout}>
-      <Header price={price}/>
+      <Header />
       <GeToday />
       <Footer />
     </Layout>
