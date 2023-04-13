@@ -19,7 +19,8 @@ class Ticker {
             return res.json()})
         .then(function(stocks){
             return stocks.quoteResponse.result[0]})
-        return res
+        
+            return res
     }
 
 }

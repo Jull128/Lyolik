@@ -3,19 +3,9 @@ import style from './style.module.css'
 import logo from '../../logo.svg'
 import poligon from './Polygon.svg'
 import poligonGreen from './PolygonGreen.svg'
-import { api } from '../../api'
-import { useQuery } from '@tanstack/react-query'
 
-export function Header() {
 
-    const {
-        data,
-    } = useQuery({
-        queryKey: ['ticker'],
-        queryFn: () => api.getTicker(),
-    })
-
-    const price = data?.regularMarketPrice
+export function Header({ price }) {
 
     //regularMarketChange - изменение цены
 
