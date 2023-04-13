@@ -18,9 +18,6 @@ class Ticker {
             .then(function (res) {
                 console.log(res);
                 return res.json()
-            }).then(function (data) {
-                console.log(data);
-                return data
             })
             .then(function (stocks) {
                 console.log(stocks);
