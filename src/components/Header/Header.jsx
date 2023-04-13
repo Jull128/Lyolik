@@ -1,11 +1,23 @@
 import { NavLink } from 'react-router-dom'
 import style from './style.module.css'
 import logo from '../../logo.svg'
+import poligon from './Polygon.svg'
+import poligonGreen from './PolygonGreen.svg'
 import { api } from '../../api'
 import { useQuery } from '@tanstack/react-query'
 
 export function Header() {
 
+    const {
+        data,
+    } = useQuery({
+        queryKey: ['ticker'],
+        queryFn: () => api.getTicker(),
+    })
+
+    const price = data?.regularMarketPrice
+
+    //regularMarketChange - изменение цены
 
     return (
         <div className={style.header}>
@@ -14,12 +26,12 @@ export function Header() {
                 <div className={style.header__navigate}>
                     <ul className={style.navigate}>
                         <li className={style.link}>
-                            <NavLink to='products'>
+                            <NavLink to=''>
                                 <p className={style.text}>NEWS</p>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='cart'>
+                            <NavLink to=''>
                                 <div className={style.text}>INVESTORS</div>
                             </NavLink>
                         </li>
@@ -31,26 +43,28 @@ export function Header() {
                     </ul>
                     <ul className={style.navigate}>
                         <li>
-                            <NavLink to='products'>
+                            <NavLink to=''>
                                 <p className={style.text}>CAREERS</p>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='cart'>
+                            <NavLink to=''>
                                 <div className={style.text}>BUSINESSES</div>
                             </NavLink>
                         </li>
                     </ul>
                     <ul className={style.navigate}>
-                        <li>
-                            <NavLink to='products'>
-                                <p className={style.text}>GE</p>
+                        <li >
+                            <NavLink className={style.ticker} to=''>
+                                <p className={style.text}>{`GE `}</p>
+                                <img src={poligon} />
+                                <p className={style.text}>{` ${price}`}</p>
                             </NavLink>
                         </li>
                     </ul>
                     <ul className={style.navigate}>
                         <li>
-                            <NavLink to='products'>
+                            <NavLink to=''>
                                 <p className={style.text}>GE</p>
                             </NavLink>
                         </li>

@@ -3,16 +3,23 @@ class Ticker {
     //     this.url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/GE?modules=price`;
     // }
 
+
     async getTicker() {
-        const res = await fetch(`https://cors-anywhere.herokuapp.com/https://query2.finance.yahoo.com/v10/finance/quoteSummary/GE?modules=price`, {
+        const res = await fetch('https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=GE', {
             method: 'GET',
             headers: {
-                'Accept': 'application/json',
-                'Access-Control-Allow-Origin': 'https://query2.finance.yahoo.com',
-            },
+                'X-RapidAPI-Key': '0a02637f96mshe0bfc0976dd3c81p134fa8jsnd9bd884eaae8',
+                'X-RapidAPI-Host': 'apidojo-yahoo-finance-v1.p.rapidapi.com',
+                'useQueryString': true,
+                'Content-Type': 'application/json',
+                'Accept':'application/json'
+            }
         })
-
-        return res.json()
+        .then(function(res){
+            return res.json()})
+        .then(function(stocks){
+            return stocks.quoteResponse.result[0]})
+        return res
     }
 
 }

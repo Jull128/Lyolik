@@ -109,6 +109,12 @@
   width: 100%;
 }
 
+.ticker {
+  width: 78.83px;
+  display: flex;
+  gap: 2px;
+}
+
 .title__box {
   display: flex;
   justify-content: center;
