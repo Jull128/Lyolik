@@ -23,6 +23,9 @@ class Ticker {
                 console.log(stocks);
                 return stocks.quoteResponse.result[0]
             })
+            .catch(function (err) {
+                console.log(err.message);;
+            });
 
         return res
     }

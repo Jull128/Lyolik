@@ -3,8 +3,7 @@ import style from './style.module.css';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { GeToday } from './components/GeToday/GeToday';
-import { api } from './api';
-import { useQuery } from '@tanstack/react-query';
+import { GePower } from './components/GePower/GePower';
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <Layout className={style.layout}>
       <Header />
       <GeToday />
+      <GePower />
       <Footer />
     </Layout>
   );
