@@ -20,7 +20,7 @@ export function Ticker() {
     let marketPrice = data?.regularMarketChange;
 
     if (isLoading) return (<div className={style.lds_ripple}><div></div><div></div></div>);
-    if (error) return <p></p>;
+    if (error) return <p className={style.ticker} ></p>;
 
     return (
         <NavLink className={style.ticker} to=''>

@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 635px;
+  width: 100%;
+  background-color: black;
+  padding: 0 10% 175px 10%;
+}
+
+.description {
+  width: 262px;
+  height: 148px;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+.picture {
+  /* position: absolute;
+  top: 0; */
+}
+
+.slide_1 {
+  display: flex;
+  flex-direction: column;
+  width: 302px !important;
+  height: 561px;
+  color: white;
+}
+
+.slide_2 {
+  display: flex;
+  flex-direction: column;
+  width: 302px !important;
+  height: 561px;
+  color: white;
+  margin-top: 62px;
+}
+
+.slide_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 302px;
+  height: 531px;
+  border: 2px solid #F2F2F2;
+}
+
+.swiper {
+  height: 623px;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0 20px;
+  height: 27px;
+  border: 1px solid #FFFFFF;
+  border-radius: 90px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}

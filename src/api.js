@@ -1,8 +1,4 @@
 class Ticker {
-    // constructor() {
-    //     this.url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/GE?modules=price`;
-    // }
-
 
     async getTicker() {
         const res = await fetch('https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?region=US&symbols=GE', {

@@ -4,6 +4,8 @@ import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { GeToday } from './components/GeToday/GeToday';
 import { GePower } from './components/GePower/GePower';
+import { TheRoad } from './components/TheRoad/TheRoad';
+import { PowerSpotlight } from './components/PowerSpotlight/PowerSpotlight';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <GeToday />
       <GePower />
+      <TheRoad />
+      <PowerSpotlight />
       <Footer />
     </Layout>
   );

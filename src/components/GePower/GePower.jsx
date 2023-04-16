@@ -12,9 +12,9 @@ export function GePower() {
                     <p className={style.text_scndLine}>lives and the future of electricity.</p>
                     <div className={style.picture}>
                         <img src={mask} alt='' />
-                        <div>
-                            <button></button>
-                            <button></button>
+                        <div className={style.button_box}>
+                            <button className={style.button}>VISIT GE POWER</button>
+                            <button className={style.button}>POWER NEWSROOM</button>
                         </div>
                     </div>
                 </div>
