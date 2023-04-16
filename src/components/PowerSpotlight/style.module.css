@@ -1,10 +1,52 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 635px;
+  height: 899px;
   width: 100%;
   background-color: black;
   padding: 0 10% 175px 10%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1330px;
+}
+
+.button__box {
+  display: flex;
+  margin-right: 485px;
+}
+
+.button_big {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 158px;
+  height: 39px;
+  background: #D9283A;
+  color: white;
+  border-style: none;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.button_small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  background: #D9283A;
+  color: white;
+  border-style: none;
+  border-radius: 90px;
+  cursor: pointer;
 }
 
 .description {
@@ -22,9 +64,29 @@
   margin: auto;
 }
 
-.picture {
-  /* position: absolute;
-  top: 0; */
+.description__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1280px;
+  height: 39px;
+  margin-bottom: 50px;
+}
+
+.description__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 95%;
+  width: 384px;
+  height: 38px;
+  color: white;
+  text-transform: uppercase;
+  margin-right: auto;
 }
 
 .slide_1 {
@@ -33,6 +95,11 @@
   width: 302px !important;
   height: 561px;
   color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .slide_2 {
@@ -42,6 +109,11 @@
   height: 561px;
   color: white;
   margin-top: 62px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .slide_box {
@@ -51,10 +123,12 @@
   width: 302px;
   height: 531px;
   border: 2px solid #F2F2F2;
+  margin-top: 13px;
 }
 
 .swiper {
   height: 623px;
+  width: 100%;
 }
 
 .title {
