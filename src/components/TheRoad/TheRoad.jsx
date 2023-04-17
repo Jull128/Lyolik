@@ -1,6 +1,6 @@
 import style from './style.module.css'
 import vector from '../GeToday/Swiper/Vector.svg'
-import img from './Rectangle 304.png'
+import img from './Rectangle.jpeg'
 
 export function TheRoad() {
     return (
@@ -24,7 +24,6 @@ export function TheRoad() {
                 </div>
             </div>
             <div className={style.background}>
-                <img src={img} alt="" />
             </div>
         </div>
     )

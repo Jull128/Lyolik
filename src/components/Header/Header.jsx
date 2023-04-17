@@ -46,7 +46,7 @@ export function Header() {
                     </ul>
                     <ul className={style.navigate}>
                         <li >
-                            <Ticker />
+                            {/* <Ticker /> */}
                         </li>
                     </ul>
                     <ul className={style.navigate__icon}>

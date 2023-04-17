@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   flex-direction: column;
@@ -12,7 +13,11 @@
 .background {
   height: 690px;
   width: 1600px;
-
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./Rectangle.jpeg) no-repeat center;
 }
 
 .box {
