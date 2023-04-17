@@ -1,23 +1,22 @@
-import { Swiper } from './Swiper/Swiper'
+import img from './join.jpg'
 import style from './style.module.css'
-import vector from './Swiper/Vector.svg'
 
 export function JoinTheTeam() {
     return (
         <div className={style.container}>
-            <div className={style.box}>
-                <div className={style.button__box}>
-                    <button className={style.button_big}>Visit the newsroom</button>
-                    <button className={style.button_small}><img src={vector} alt="" className={style.vector} /> </button>
-                </div>
 
-                <div className={style.title__box}>
-                    <div className={style.title}>GE TODAY</div>
-                    <div className={style.swiper}>
-                        <Swiper />
-                    </div>
+            <div className={style.title}>
+                JOIN THE TEAM
+            </div>
+
+            <div className={style.box}>
+                <img src={img} alt='' className={style.picture}></img>
+                <div className={style.description}>
+                    <p className={style.text}> GE Power is a world energy leader providing equipment, solutions and services across the energy value chain from generation to consumption. We are developing the energy technologies of the future. Power your career today!</p>
+                    <button className={style.button}>VIEW POWER ROLES</button>
                 </div>
             </div>
+
         </div>
     )
 }
