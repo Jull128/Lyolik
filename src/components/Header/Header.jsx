@@ -5,9 +5,6 @@ import search from './search.svg'
 import mail from './mail.svg'
 import internet from './internet.svg'
 
-import { Ticker } from './Ticker/Ticker'
-
-
 export function Header() {
 
     return (

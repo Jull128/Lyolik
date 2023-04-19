@@ -1,6 +1,6 @@
 import style from './style.module.css'
 import vector from '../GeToday/Swiper/Vector.svg'
-import img from './Rectangle.jpeg'
+
 
 export function TheRoad() {
     return (
