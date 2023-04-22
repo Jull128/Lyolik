@@ -1,7 +1,6 @@
 import style from './style.module.css'
 import vector from '../GeToday/Swiper/Vector.svg'
 
-
 export function TheRoad() {
     return (
         <div className={style.container}>
