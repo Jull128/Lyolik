@@ -35,7 +35,7 @@ export function PowerSpotlight() {
                         speed={2500}
                         freeMode={true}
                         autoplay={{
-                            delay: 3500,
+                            delay: 4500,
                             disableOnInteraction: false,
                         }}
                         modules={[Autoplay, FreeMode]}

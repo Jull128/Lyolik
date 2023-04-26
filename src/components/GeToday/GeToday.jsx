@@ -3,6 +3,8 @@ import style from './style.module.css'
 import vector from './Swiper/Vector.svg'
 
 export function GeToday() {
+
+
     return (
         <div className={style.container}>
             <div className={style.box}>

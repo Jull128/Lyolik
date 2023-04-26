@@ -4,13 +4,14 @@
   height: 564px;
   width: 100%;
   background-color: black;
-  padding: 0 10% 175px 10%;
+  padding: 0 0 175px 0;
 }
 
 .box {
   display: flex;
   justify-content: space-between;
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .button__box {

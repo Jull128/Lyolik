@@ -4,5 +4,5 @@
   min-height: calc(100vh - 716.13px);
   min-width: 100vw;
   width: 100%;
-
+  padding: 0 10%;
 }

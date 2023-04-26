@@ -4,13 +4,18 @@ import logo from '../../logo.svg'
 import search from './search.svg'
 import mail from './mail.svg'
 import internet from './internet.svg'
+import { Ticker } from './Ticker/Ticker'
 
 export function Header() {
 
     return (
         <div className={style.header}>
             <div className={style.header__navigate__box}>
-                <div className={style.logo}><img src={logo} alt='' /></div>
+                <div className={style.logo}>
+                    <NavLink to=''>
+                        <img src={logo} alt='' />
+                    </NavLink>
+                </div>
                 <div className={style.header__navigate}>
                     <ul className={style.navigate}>
                         <li className={style.link}>
@@ -24,7 +29,7 @@ export function Header() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='favorite' >
+                            <NavLink to='' >
                                 <div className={style.text}>ABOUT US</div>
                             </NavLink>
                         </li>
