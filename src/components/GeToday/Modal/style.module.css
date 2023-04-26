@@ -1,0 +1,42 @@
+.container__aero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  width: 100%;
+  background: center / contain no-repeat url(aerospace.png);
+  color: white;
+}
+
+.container__vanguard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  width: 100%;
+  background: no-repeat 138% 102%/69% url(galaxy.png);
+  color: white;
+}
+
+.title__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 30px;
+  height: 200px;
+  width: 60%;
+  margin: 0;
+}
+
+.title__box p,
+h4 {
+  font-family: 'Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin: 0;
+}
+
+.title__box p {
+  font-size: 52px;
+}
