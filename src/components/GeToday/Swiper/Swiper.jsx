@@ -7,6 +7,7 @@ import vector from './Vector.svg'
 import { Aerospace } from '../Modal/Aerospace'
 import { useState } from 'react'
 import { Vanguard } from '../Modal/Vanguard'
+import { Robotics } from '../Modal/Robotics'
 
 export function Swiper() {
     const [isModalAerospaceOpen, setIsModalAerospaceOpen] = useState(false)
@@ -74,6 +75,10 @@ export function Swiper() {
             <Vanguard
                 isModalOpen={isModalVanguardOpen}
                 setIsModalOpen={setIsModalVanguardOpen}
+            />
+            <Robotics
+                isModalOpen={isModalRoboticsOpen}
+                setIsModalOpen={setIsModalRoboticsOpen}
             />
         </>
     );
