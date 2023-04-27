@@ -98,6 +98,7 @@
 .title__text {
   position: relative;
   top: -27px;
+  min-width: 1110px;
   font-family: 'Neue Machina';
   font-size: 120px;
   color: white;
